@@ -8,7 +8,9 @@ public class Ex10_5 {
 			fin = new FileReader("konkuk.txt");
 			int c;
 			while((c = fin.read()) != -1) {
-				c += 3;
+				if( c != 32) {
+					c += 3;
+				}
 				System.out.print((char) c);
 			}
 			fin.close();
